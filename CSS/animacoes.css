@@ -48,7 +48,7 @@ section#O_Outro_Lado {
 
 @keyframes shake {
     2% {
-        transform: translate(1.5px, 1.5px) rotate(.7deg)
+        transform: translate(1.5px, 1.5px) rotate(.5deg)
     }
 
     6% {
@@ -491,5 +491,113 @@ section#O_Outro_Lado {
         color: var(--cor-energia-telo2);
         animation: error 5s step-end infinite, opacity 5s step-end infinite,
             font 7s step-end infinite;
+    }
+
+    .shake {
+        animation-name: shake;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+    }
+    
+    @keyframes shake {
+        2% {
+            transform: translate(.5px, .5px) rotate(.5deg)
+        }
+    
+        6% {
+            transform: translate(0px, 0px) rotate(.5deg)
+        }
+    
+        10% {
+            transform: translate(0px, .5px) rotate(.5deg)
+        }
+    
+        14% {
+            transform: translate(0px, 0px) rotate(.5deg)
+        }
+    
+        18% {
+            transform: translate(.5px, 0px) rotate(.5deg)
+        }
+    
+        22% {
+            transform: translate(.5px, .5px) rotate(.5deg)
+        }
+    
+        26% {
+            transform: translate(0px, .5px) rotate(.5deg)
+        }
+    
+        30% {
+            transform: translate(0px, .5px) rotate(.5deg)
+        }
+    
+        34% {
+            transform: translate(.5px, 0px) rotate(.5deg)
+        }
+    
+        38% {
+            transform: translate(0px, .5px) rotate(.5deg)
+        }
+    
+        42% {
+            transform: translate(0px, .5px) rotate(.5deg)
+        }
+    
+        46% {
+            transform: translate(0px, 0px) rotate(.5deg)
+        }
+    
+        50% {
+            transform: translate(.5px, 0px) rotate(.5deg)
+        }
+    
+        54% {
+            transform: translate(.5px, 0px) rotate(.5deg)
+        }
+    
+        58% {
+            transform: translate(.5px, .5px) rotate(.5deg)
+        }
+    
+        62% {
+            transform: translate(0px, 0px) rotate(.5deg)
+        }
+    
+        66% {
+            transform: translate(0px, 0px) rotate(.5deg)
+        }
+    
+        70% {
+            transform: translate(.5px, 0px) rotate(.5deg)
+        }
+    
+        74% {
+            transform: translate(0px, 0px) rotate(.5deg)
+        }
+    
+        78% {
+            transform: translate(0px, .5px) rotate(.5deg)
+        }
+    
+        82% {
+            transform: translate(.5px, 0px) rotate(.5deg)
+        }
+    
+        86% {
+            transform: translate(.5px, 0px) rotate(.5deg)
+        }
+    
+        90% {
+            transform: translate(0px, .5px) rotate(.5deg)
+        }
+    
+        94% {
+            transform: translate(.5px, 0px) rotate(.5deg)
+        }
+    
+        98% {
+            transform: translate(.5px, 0px) rotate(.5deg)
+        }
     }
 }

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ElemVis/Medo-Icon.webp">
+    <title>Ordem Paranormal - TCM</title>
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Carousel-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="CSS/mainSorce.css">
+    <link rel="stylesheet" href="CSS/animacoes.css">
+    <link rel="stylesheet" href="CSS/transicoes.css">
+    <link rel="stylesheet" href="CSS/principal.css">
+
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="ElemVis/op-logo.webp" alt="ordem paranomral logo">
+        </a>
+
+        <i id="barrinha" class="fa fa-navicon" onclick="estado()"></i>
+
+        <nav class="menuitem">
+            <a href="#Sobre_O_Universo">Sobre</a>
+            <a href="#">Ficha</a>
+            <a href="Classes.html">Classes</a>
+            <a href="Ritais.html">Rituais</a>
+            <a href="Bestiario.html">Bestiário</a>
+            <a href="https://ordemparanormal.fandom.com/wiki/Ordem_Paranormal_Wiki" target="_blank">Wiki</a>
+            <a href="https://www.lolja.com.br/ordem-cellbit" target="_blank">Loja</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="Carousel" class="carousel slide odd" data-bs-ride="carousel">
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <a href="https://www.nuuvem.com/lp/pt/enigma-do-medo/" target="_blank">
+                    <div id="propaganda1" class="carousel-item active"></div>
+                </a>
+
+                <a href="https://jamboeditora.com.br/produto/ordem-paranormal-vol-1-iniciacao/" target="_blank">
+                    <div id="propaganda2" class="carousel-item"></div>
+                </a>
+
+                <a href="https://jamboeditora.com.br/produto/ordem-paranormal-rpg/" target="_blank">
+                    <div id="propaganda3" class="carousel-item"></div>
+                </a>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators" style="transform: translateY(-20px);">
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+
+        <section id="Sobre_O_Universo">
+            <h1 data-animar="fade-down">SOBRE O UNIVERSO</h1>
+
+            <img class="sublinhado " data-animar="fade" src="ElemVis/risca.svg" alt="sublinhado">
+
+            <p data-animar="fade">
+                A Ordem Paranormal é um universo ficcional de RPG criado pelo YouTuber e streamer Rafael Lange,
+                o Cellbit. Tudo começou com a primeira live da série em 29 de fevereiro de 2020, consistindo em
+                uma
+                sessão de RPG . A partir daí, mais episódios foram lançados, acompanhando a história dos agentes
+                da
+                Ordo
+                Realitas em sua eterna missão de deter as forças do Outro Lado, enquanto exploram o mundo
+                sombrio do
+                ocultismo. A trama é repleta de mistério, terror e ação.
+            </p>
+            <p data-animar="fade">
+                Atualmente, a Ordem Paranormal já conta com seis temporadas no YouTube, uma história em
+                quadrinhos
+                que
+                reconta os eventos da primeira temporada sob uma nova perspectiva, o livro de regras do sistema
+                oficial
+                da Ordem e ainda o jogo Enigma do Medo, que será lançado até o final de 2023.
+            </p>
+
+            <div data-animar="fade">
+                <img id="energy" src="ElemVis/energia.svg" alt="energia">
+                <img id="death" src="ElemVis/morte.svg" alt="morte">
+                <img id="fear" src="ElemVis/medo.svg" alt="medo">
+                <img id="blood" src="ElemVis/sangue.svg" alt="sangue">
+                <img id="knologe" src="ElemVis/conchecimento.svg" alt="conhecimento">
+            </div>
+        </section>
+
+        <section id="O_Outro_Lado" class="borda-gradient">
+            <h1 class="shake" data-animar="fade-down">O OUTRO LADO</h1>
+
+            <p id="OLp1" class="shake daisy-wheel" data-animar="fade">
+                O <b class="westsac">PARANORMAL</b> NÃO VEM PARA NOSSA REALIDADE DE MANEIRA FÁCIL. OU, PELO MENOS AS
+                COISAS DEVERIAM SER ASSIM.
+            </p>
+            <p id="OLp2" class="shake daisy-wheel" data-animar="fade">
+                O MUNDO EM QUE VIVEMOS NÃO É O ÚNICO. O UNIVERSO QUE HABITAMOS <b class="westsac">— A REALIDADE
+                    —</b> É PROTEJIDO POR UMA
+                BARREIRA INVISIVEL DENOMINADA <b class="gabriele-bad">MEMBRANA</b>. ALÉM DELA, EXISTE UM LUGAR DE
+                INSANIDADE E MEDO. HABITADA POR FORÇAS MALIGNAS, ESSA DIMENÇÃO É COHECIDA APENAS COMO <b
+                    class="fluxetine">OUTRO LADO</b>.
+            </p>
+            <p id="OLp3" class="shake daisy-wheel" data-animar="fade">
+                AS ENTIDADES DO <b class="westsac">OUTRO LADO</b> USAM SEUS PODERES PARA ATRAVESSAR A <b
+                    class="fluxetine">MEMBRANA</b> E ATERRORIZAR AS PESSOAS
+                INOCENTES QUE VIVEM NAREALIDADE EM ETA IGNORANCIA.
+            </p>
+        </section>
+
+        <section id="A_Realidade" class="borda-gradient">
+            <h1 data-animar="fade-down">A REALIDADE</h1>
+
+            <img class="sublinhado" data-animar="fade" src="ElemVis/risca.svg" alt="Sublinhado">
+
+            <p data-animar="fade">
+                Em um mundo onde criaturas paranormais podem surgir a qualquer momento e ocultistas buscam seus
+                objetivos implacavelmente, a Ordo Realitas, a Ordem da Realidade, foi estabelecida. É uma organização de
+                indivíduos unidos por um objetivo compartilhado: investigar e enfrentar entidades paranormais do Outro
+                Lado, protegendo aqueles que não podem se defender sozinhos.
+            </p>
+            <div id="papel" data-animar="fade-left">
+
+                <h2>A ORDEM DA REALIDADE</h2>
+
+                <div>
+                    <p>
+                        Pouco se sabe sobre as origens da Ordem, já que a maioria das informações sobre o passado da
+                        organização foram destruídas. Evidências indicam a existência de investigadores paranormais há
+                        mais de 2000 anos. As missões da Ordem são discretas, visando evitar a revelação de sua
+                        existência a pessoas normais, pois isso pode ter consequências perigosas. Os agentes usam nomes
+                        e documentos falsos, investigam em horários discretos e evitam envolver pessoas não informadas
+                        sobre o paranormal.
+                    </p>
+
+                    <img src="ElemVis/OrdoRealitas_Preto(1).webp" alt="simbolo da Ordo Realitas">
+                </div>
+            </div>
+        </section>
+
+        <section id="O_Criador" class="borda-gradient">
+            <div>
+                <h1 class="glitch layers" data-text="O CRIADOR">
+                    O CRIADOR
+                </h1>
+
+                <p class=" glitch layers daisy-wheel" data-text="RAFAEL LANGE, MAIS CONHECIDO PELO SEU PSEUDÔNIMO CELLBIT, É O CRIADOR DO UNIVERSO DE ORDEM
+                PARANORMAL.
+                ALÉM DISSO, ATUA COMO ROTEIRISTA, DIRETOR CRIATIVO E CRIADOR DE CONTEÚDO NAS PLATAFORMAS YOUTUBE E
+                TWITCH.">
+                    RAFAEL LANGE, MAIS CONHECIDO PELO SEU PSEUDÔNIMO CELLBIT, É O CRIADOR DO UNIVERSO DE ORDEM
+                    PARANORMAL.
+                    ALÉM DISSO, ATUA COMO ROTEIRISTA, DIRETOR CRIATIVO E CRIADOR DE CONTEÚDO NAS PLATAFORMAS YOUTUBE E
+                    TWITCH.
+                </p>
+                <p class=" glitch layers daisy-wheel"
+                    data-text="É DIRETOR CRIATIVO DO JOGO ORDEM PARANORMAL: ENIGMA DO MEDO.">
+                    É DIRETOR CRIATIVO DO JOGO ORDEM PARANORMAL: ENIGMA DO MEDO.
+                </p>
+                <p class=" glitch layers daisy-wheel" data-text="NA VERSÃO RPG DE MESA DO UNIVERSO, ELE ATUA COMO NARRADOR, RESPONSÁVEL POR GERIR TODO O MUNDO DE
+                CRIATURAS, PERSONAGENS E ACONTECIMENTOS.">
+                    NA VERSÃO RPG DE MESA DO UNIVERSO, ELE ATUA COMO NARRADOR, RESPONSÁVEL POR GERIR TODO O MUNDO DE
+                    CRIATURAS, PERSONAGENS E ACONTECIMENTOS.
+                </P>
+            </div>
+
+            <img data-animar="fade-left" src="ElemVis/celbit.webp" alt="Rafael Lanches: o Cellbit">
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="direitos-autorais">
+            <img src="ElemVis/op-logo.webp" alt="logo ordem paranromal">
+            <span> Todos os Direitos Reservados ® 2023 Ordem Paranormal</span>
+        </div>
+
+        <div id="icones-redes-sociais">
+
+            <a class="fa fa-youtube-play" href="https://www.youtube.com/@OrdemParanormal" target="_blank"></a>
+
+            <a class="fa fa-facebook-f" href="https://www.facebook.com/OrdemParanormal/" target="_blank"></a>
+
+            <a class="fa fa-twitter" href="https://twitter.com/ordemparanormal" target="_blank"> </a>
+
+            <a class="fa fa-instagram" href="https://www.instagram.com/ordemparanormal/" target="_blank"></a>
+
+            <a class="fa fa-spotify"
+                href="https://open.spotify.com/intl-pt/artist/2MUYC8Vj0uAZWtI37Bt6w7?si=OMv9-bnTQHm3GRtmu7xoUQ&dl_branch=1&nd=1"
+                target="_blank"></a>
+
+            <a class="fa fa-apple" href="https://music.apple.com/br/artist/júlio-victor/1569993490" target="_blank"></a>
+        </div>
+    </footer>
+
+    <script src="ordemparanormal.js"></script>
+</body>

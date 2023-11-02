@@ -1,0 +1,43 @@
+[data-animar] {
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+[data-animar="fade"] {
+    opacity: 0;
+}
+
+[data-animar="fade-down"] {
+    transform: translate3d(0px, 50px, 0px);
+    opacity: 0;
+}
+
+[data-animar="fade-up"] {
+    transform: translate3d(0px, -50px, 0px);
+    opacity: 0;
+}
+
+[data-animar="fade-rigth"] {
+    transform: translate3d(-50px, 0px, 0px);
+    opacity: 0;
+}
+
+[data-animar="fade-left"] {
+    transform: translate3d(50px, 0px, 0px);
+    opacity: 0;
+}
+
+@media screen and (max-width: 769px) {
+    [data-animar="fade-down"],
+    [data-animar="fade-up"],
+    [data-animar="fade-rigth"],
+    [data-animar="fade-left"] {
+        transform: translate3d(0px, 0px, 0px);
+        opacity: 0;
+    }
+
+}
+
+.animado {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}

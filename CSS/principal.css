@@ -1,0 +1,527 @@
+/*Sessões*/
+
+section {
+    width: 100%;
+    max-width: 1920px;
+    height: fit-content;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    padding: 150px clamp(100px, 20%, 460px);
+}
+
+div#Carousel::after,
+.borda-gradient::before {
+    content: '';
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 35%, #000 50%, rgba(0, 0, 0, 0.5) 65%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    margin: 0;
+    right: 0;
+    left: 0;
+    z-index: 90;
+}
+
+.borda-gradient::before {
+    transform: translate3d(0, -250px, 0);
+}
+
+div#Carousel::after {
+    transform: translate3d(0, -100px, 0);
+}
+
+/*---------------------> Carousel <---------------------*/
+section#Carousel {
+    padding: 0;
+}
+
+div.carousel-item {
+    width: 100%;
+    max-width: 1920px;
+    height: 460px;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+}
+
+div#propaganda1 {
+    background-image: url(../PropagIMG/Enigma\ do\ medo\ propaganda.webp);
+}
+
+div#propaganda2 {
+    background-image: url(../PropagIMG/hq-iniciacao.webp);
+}
+
+div#propaganda3 {
+    background-image: url(../PropagIMG/propaganda\ livro\ Jambo.webp);
+}
+
+section#Carousel a{
+    height: 500px;
+    width: 500px;
+}
+
+/*---------------------> Sobre o Universo <---------------------*/
+section#Sobre_O_Universo {
+    background-image: url(../fundos/fundoSobre.webp);
+}
+
+img.sublinhado {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#Sobre_O_Universo div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+#Sobre_O_Universo div img {
+    height: 100px;
+    transition: ease 0.3s;
+    display: inline-block;
+}
+
+#Sobre_O_Universo div img:hover {
+    scale: 1.1;
+}
+
+img#knologe {
+    filter: drop-shadow(0px 0px 3px var(--cor-conhecimento));
+}
+
+img#knologe:hover {
+    filter: drop-shadow(0px 0px 9px var(--cor-conhecimento));
+}
+
+img#blood {
+    filter: drop-shadow(0px 0px 3px var(--cor-sangue));
+}
+
+img#blood:hover {
+    filter: drop-shadow(0px 0px 9px var(--cor-sangue))
+}
+
+img#fear {
+    filter: drop-shadow(0px 0px 3px var(--cor-medo));
+}
+
+img#fear:hover {
+    filter: drop-shadow(0px 0px 9px var(--cor-medo));
+}
+
+img#energy {
+    filter: drop-shadow(0px 0px 3px var(--cor-energia));
+}
+
+img#energy:hover {
+    filter: drop-shadow(0px 0px 9px var(--cor-energia));
+}
+
+img#death {
+    filter: drop-shadow(0px 0px 3px var(--cor-morte));
+}
+
+img#death:hover {
+    filter: drop-shadow(0px 0px 9px var(--cor-morte));
+    ;
+}
+
+/*---------------------> O Outro Lado <---------------------*/
+section#O_Outro_Lado {
+    text-shadow: 0px 0px 10px var(--cor-sangue);
+    background-image: url(../fundos/FundoOutroLado.webp);
+    justify-content: center;
+    text-align: left;
+}
+
+#O_Outro_Lado h1 {
+    color: var(--cor-sangue-claro);
+    margin-bottom: 40px;
+}
+
+#O_Outro_Lado p {
+    color: var(--cor-sangue-claro);
+    font-size: 1.4em;
+    line-height: 40px;
+    margin: 10px 0;
+}
+
+#O_Outro_Lado p b {
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+#OLp1 {
+    width: 75%;
+}
+
+#OLp2 {
+    width: 50%;
+}
+
+#OLp3 {
+    width: 80%;
+}
+
+/*---------------------> A Realidade <---------------------*/
+section#A_Realidade {
+    background-image: url(../fundos/fundoRealidade.webp);
+    background-position: center top;
+    justify-content: center;
+}
+
+section#A_Realidade h1 {
+    font-size: 5.5em;
+    margin: 0;
+}
+
+section#A_Realidade p {
+    margin: 0 0 30px;
+}
+
+/*Papel*/
+div#papel {
+    background-image: url(../fundos/folha.webp);
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 40px 10px;
+    rotate: -1.5deg;
+    transition: 1s;
+}
+
+div#papel:hover {
+    scale: 1.02;
+    filter: drop-shadow(10px 10px 40px #000);
+}
+
+div#papel h2 {
+    font-family: 'Westsac';
+    color: #000;
+    font-weight: 100;
+    font-size: 3.5em;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 0;
+    transform: translate3d(0, 21px, 0);
+}
+
+div#papel div {
+    padding: 0 30px;
+    border-top: solid #000 8px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+div#papel p {
+    color: #000;
+    font-family: 'Gabriele Bad';
+    font-size: 1.1em;
+    font-weight: 500;
+    text-align: left;
+    word-spacing: 2.3px;
+    letter-spacing: -0.5px;
+    margin: 30px 0;
+}
+
+div#papel img {
+    height: 400px;
+}
+
+/*---------------------> O Criador <---------------------*/
+
+section#O_Criador {
+    text-align: left;
+    text-shadow: 0px 0px 5px #00cabc;
+    background-image: url(../fundos/fundoFooter.webp);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    padding: 150px clamp(80px, 15%, 460px);
+}
+
+section#O_Criador img {
+    height: 410px;
+    width: auto;
+    align-self: center;
+}
+
+/*---------------------> 14 polegadas de Merda <---------------------*/
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    section {
+        padding: 150px clamp(100px, 10%, 460px);
+    }
+
+    section#O_Criador {
+        padding: 150px clamp(80px, 10%, 460px);
+    }
+
+}
+
+/*---------------------> Tablet <---------------------*/
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 150px clamp(0px, 6%, 460px);
+    }
+
+    img.sublinhado {
+        width: 80%;
+        margin-bottom: 35px;
+    }
+
+    /*Carousel*/
+    div.carousel-item {
+        height: 420px;
+    }
+
+    /*Sobre o Universo*/
+    #Sobre_O_Universo div {
+        flex-wrap: nowrap;
+    }
+
+    #Sobre_O_Universo div img {
+        height: 85px;
+    }
+
+    /*O Outro Lado*/
+    #O_Outro_Lado p {
+        font-size: 1.25em;
+        line-height: 40px;
+    }
+
+    #O_Outro_Lado p b {
+        font-size: 1.25em;
+        font-weight: 100;
+    }
+
+    #OLp1 {
+        width: 75%;
+    }
+
+    #OLp2 {
+        width: 55%;
+    }
+
+    #OLp3 {
+        width: 80%;
+    }
+
+    /*A Realidade*/
+    section#A_Realidade h1 {
+        font-size: 4.5em;
+    }
+
+    section#A_Realidade p {
+        margin: 0 2% 30px;
+    }
+
+    div#papel div {
+        grid-template-columns: 6fr 3fr;
+        padding-top: 15px;
+    }
+
+    div#papel h2 {
+        font-size: 3em;
+        margin-bottom: 0;
+        transform: translate3d(0, 18px, 0);
+    }
+
+    div#papel p {
+        font-size: 1em;
+    }
+
+    div#papel img {
+        height: 340px;
+    }
+
+    /*O Criador*/
+    section#O_Criador {
+        grid-template-columns: 6fr 3fr;
+        padding: 150px clamp(80px, 6%, 460px);
+    }
+
+    section#O_Criador img {
+        height: 310px;
+        margin-left: 10px;
+    }
+}
+
+/*---------------------> Celular <---------------------*/
+@media screen and (max-width: 769px) {
+
+    section {
+        padding: 75px 10px;
+        background-position: left center;
+    }
+
+    div#Carousel::after,
+    .borda-gradient::before {
+        height: 100px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0) 25%, #000 50%, rgba(255, 255, 255, 0) 75%);
+    }
+
+    div#Carousel::after {
+        transform: translate3d(0, -50px, 0);
+    }
+
+    .borda-gradient::before {
+        transform: translate3d(0, -125px, 0);
+    }
+
+    h1{
+        text-align: center;
+        letter-spacing: -1.5px;
+        margin-bottom: 20px !important;
+    }
+
+    p {
+        margin: 0 10px 20px;
+        text-align: left;
+    }
+
+    /*Carousel*/    
+    div.carousel-item {
+        height: 400px;
+    }
+    
+    div#propaganda1 {
+        background-image: url(../PropagIMG/Propaganda-Enigma-do-Medo-Mobile.png);
+    }
+    
+    div#propaganda2 {
+        background-image: url(../PropagIMG/Propaganda-HQ-Iniciacao-Mobile.jpg);
+    }
+    
+    div#propaganda3 {
+        background-image: url(../PropagIMG/Propaganda-Livro-Mobile.png);
+    }
+
+    button.carousel-control-prev,
+    button.carousel-control-next{
+        opacity: 0;
+    }
+
+    /*Sobre O universo*/
+    #Sobre_O_Universo div {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    
+    #Sobre_O_Universo div img {
+        height: 100px;
+        width: 110px;
+    }
+
+    img#fear {
+       order: 1;
+       transform: translate3d(0, 50px, 0);
+    }
+
+    img#death {
+        order: 3;
+    }
+
+    img#blood {
+        order: 0;
+    }
+
+    img#energy {
+        order: 4;
+    }
+
+    img#knologe {
+        order: 2;
+    }
+
+    /*O Outro Lado*/
+    img.sublinhado {
+        display: none;
+    }
+
+    p.daisy-wheel, 
+    #O_Outro_Lado p,
+    #O_Outro_Lado p b { 
+        text-align: center;
+        font-size: .95em;
+        line-height: 26px;
+        font-weight: 100;
+        margin: 0 0 20px;
+    }
+
+    #OLp1,
+    #OLp2,
+    #OLp3 {
+        width: 100%;
+    }
+
+    #OLp3::after {
+        content: url(../ElemVis/desconjuracao.webp);
+        filter: drop-shadow(0 0 5px var(--cor-sangue));
+    }
+
+    /*A Realidade*/
+    section#A_Realidade {
+        background-position: 1350px top;
+    }
+
+    section#A_Realidade h1 {
+        font-size: 2.6em;
+    }
+
+    section#A_Realidade p {
+        text-align: left;
+    }
+
+    /*Papel*/
+    div#papel {
+        width: calc(100% + 15px);
+        translate: -7.5px 0;
+        background-image: url(../fundos/folhaMobile.webp);
+        rotate: 0deg;
+        padding: 30px 0;
+    }
+
+    div#papel div {
+        border-width: 5px;
+        grid-template-rows: 1fr 280px;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    div#papel h2 {
+        font-size: 2.05em;
+        letter-spacing: -2.5px;
+        transform: translate3d(0, 10px, 0);
+    }
+
+    div#papel p {
+        font-size: .8em;
+        margin: 20px;
+    }
+
+    div#papel img {
+        height: 270px;
+    }
+
+    /*O Criador*/
+    section#O_Criador {
+        grid-template-rows: 4fr 3fr;
+        grid-template-columns: 1fr;
+        padding: 75px 20px;
+    }
+
+    section#O_Criador img{
+        margin: 0;
+        justify-self: center;
+    }
+}

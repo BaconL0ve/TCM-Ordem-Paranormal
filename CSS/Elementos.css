@@ -1,0 +1,596 @@
+@import url(mainSorce.css);
+
+/*---------------------> Style Geral<---------------------*/
+main {
+    width: clamp(864px, 60%, 1440px);
+    padding: 150px 0 !important;
+}
+
+body {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+/*---------------------> Titulo geral <---------------------*/
+img.Titulo {
+    width: clamp(200px, 90%, 1440px);
+    height: auto;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+p.subtitulo {
+    font-family: 'Fluxetine';
+    font-size: 1.9em;
+    margin: -10px 0 60px;
+
+}
+
+p.narracao {
+    margin-bottom: 30px;
+}
+
+
+/*---------------------> texto geral <---------------------*/
+
+h2.espaco {
+    margin-top: 70px;
+}
+
+h2 {
+    font-family: 'Westsac';
+    font-size: 3.4em;
+    font-weight: 100;
+    border: none;
+}
+
+p {
+    font-family: 'Gabriele Bad';
+    font-size: 1.1em;
+    line-height: 1.25em;
+    margin-bottom: 20px;
+}
+
+p b{
+    color: white;
+}
+
+/*---------------------> Reliquia e Afinidade<---------------------*/
+main a {
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-size: 1.2em;
+    display: block;
+}
+
+main a img {
+    width: 55%;
+    height: auto;
+    margin: 15px 0;
+    transition: .5s;
+    background: none;
+}
+
+main a img:hover {
+    width: 55%;
+    height: auto;
+    margin: 15px 0;
+    transition: .5s;
+    background: none;
+    scale: 1.02;
+}
+
+
+div.afinidade {
+    margin-top: 70px;
+}
+
+/*---------------------> Criaturas e Rituais <---------------------*/
+div.CriasRitos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 0px;
+    margin: 70px 0;
+}
+
+div.CriasRitos h2 {
+    font-size: 3em;
+}
+
+/*---------------------> Opressão <---------------------*/
+div.Opressao {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 8% 0 5%;
+    flex-direction: column;
+    justify-content: center;
+    background-size: 100% 100%;
+}
+
+div.Opressao p {
+    font-family: 'Keyes';
+    font-size: 1em;
+    text-shadow: none !important;
+}
+
+div.Opressao p.supera {
+    padding: 0 20%;
+    font-family: 'Fluxetine';
+    font-size: 1.8em;
+}
+
+div.Opressao p.supera b {
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+/*---------------------> Estilo Energia <---------------------*/
+
+/*Fundos*/
+body#Energia {
+    background-image: url(../fundos/fundoEnergia.webp);
+}
+
+#Energia div.Opressao {
+    background-image: url(../fundos/destaqueEnegia.webp);
+}
+
+/*Brilho*/
+#Energia p,
+#Energia h2,
+#Energia main a {
+    text-shadow: -5px -5px 8px #EA0EB2, 5px 5px 8px #0000BF;
+}
+
+#Energia main a img {
+    filter: drop-shadow(-3px -3px 5px #EA0EB2) drop-shadow(3px 3px 5px #0000BF);
+}
+
+/*hovers*/
+#Energia a:hover,
+#Energia footer div a:hover {
+    color: var(--cor-energia);
+    text-shadow: 0px 0px 15px #0000BF;
+}
+
+#Energia main a img:hover {
+    filter: drop-shadow(3px 3px 5px #EA0EB2) drop-shadow(-3px -3px 5px #0000BF);
+}
+
+#Energia ::selection {
+    background-color: var(--cor-energia);
+    color: white;
+}
+
+#Energia ::-moz-selection {
+    background-color: var(--cor-energia);
+    color: white;
+}
+
+#Energia ::-webkit-selection {
+    background-color: var(--cor-energia);
+    color: white;
+}
+
+/*---------------------> Estilo Morte <---------------------*/
+body#Morte {
+    background-image: url(../fundos/fundoMorte.webp);
+}
+
+#Morte div.Opressao {
+    background-image: url(../fundos/destaqueMorte.webp);
+}
+
+#Morte p.subtitulo {
+    font-size: 1.6em;
+}
+
+#Morte p,
+#Morte h2,
+#Morte main a {
+    text-shadow:
+
+        -1.2px -1.2px 1.5px black,
+        1.2px -1.2px 1.5px black,
+        -1.2px 1.2px 1.5px black,
+        1.2px 1.2px 1.5px black,
+        0 0 8px black,
+        0 0 15px var(--cor-morte);
+}
+
+#Morte a:hover,
+#Morte footer div a:hover {
+    color: var(--cor-morte);
+    text-shadow: 0px 0px 5px black;
+}
+
+#Morte ::selection {
+    background-color: var(--cor-morte);
+    color: black;
+}
+
+#Morte ::-moz-selection {
+    background-color: var(--cor-morte);
+    color: black;
+}
+
+#Morte ::-webkit-selection {
+    background-color: var(--cor-morte);
+    color: black;
+}
+
+/*---------------------> Estilo Sangue <---------------------*/
+
+body#Sangue {
+    background-image: url(../fundos/fundoSangue.webp);
+}
+
+#Sangue div.Opressao {
+    background-image: url(../fundos/destaqueSangue.webp);
+}
+
+#Sangue p.subtitulo {
+    font-size: 1.6em;
+}
+
+#Sangue p,
+#Sangue h2,
+#Sangue main a {
+    text-shadow:
+        -1.2px -1.2px 0 black,
+        1.2px -1.2px 0 black,
+        -1.2px 1.2px 0 black,
+        1.2px 1.2px 0 black,
+        0 0 15px var(--cor-sangue);
+}
+
+#Sangue a:hover,
+#Sangue footer div a:hover {
+    color: var(--cor-sangue);
+    text-shadow: 0px 0px 10px black;
+}
+
+#Sangue ::selection {
+    background-color: var(--cor-sangue);
+    color: black;
+}
+
+#Sangue ::-moz-selection {
+    background-color: var(--cor-sangue);
+    color: black;
+}
+
+#Sangue ::-webkit-selection {
+    background-color: var(--cor-sangue);
+    color: black;
+}
+
+/*---------------------> Estilo Conhecimento <---------------------*/
+
+body#Conhecimento {
+    background-image: url(../fundos/fundoConhecimento.webp);
+}
+
+#Conhecimento div.Opressao {
+    background-image: url(../fundos/destaqueConhecimento.webp);
+}
+
+#Conhecimento p,
+#Conhecimento h2,
+#Conhecimento main a {
+    text-shadow:
+        0 0 10px var(--cor-conhecimento),
+        0 0 10px var(--cor-conhecimento);
+}
+
+#Conhecimento main a img {
+    filter: drop-shadow(0 0 8px var(--cor-conhecimento));
+}
+
+#Conhecimento footer div a:hover {
+    color: var(--cor-conhecimento);
+    text-shadow: 0px 0px 15px var(--cor-conhecimento);
+}
+
+#Conhecimento main a:hover,
+#Conhecimento header a:hover{
+    color: white;
+    font-family: 'Sigilos';
+    text-shadow: 0px 0px 15px var(--cor-conhecimento);
+}
+
+
+
+#Conhecimento ::selection {
+    background-color: var(--cor-conhecimento);
+    color: black;
+}
+
+#Conhecimento ::-moz-selection {
+    background-color: var(--cor-conhecimento);
+    color: black;
+}
+
+#Conhecimento ::-webkit-selection {
+    background-color: var(--cor-conhecimento);
+    color: black;
+}
+
+/*---------------------> Estilo Medo <---------------------*/
+body#Medo {
+    background-image: url(../fundos/fundoMedo.webp);
+}
+
+#Medo p,
+#Medo h2,
+#Medo main a {
+    color: black;
+    text-shadow:
+        0 0 3px black,
+        0 0 8px white;
+}
+
+#Medo a:hover {
+    color: black;
+    text-shadow:
+        0 0 2px black,
+        0 0 10px white;
+}
+
+#Medo p.nota,
+#Medo p.subtitulo,
+#Medo main a:hover,
+#Medo footer div a:hover {
+    color: white;
+    text-shadow:
+        -1.5px -1.5px 5px black,
+        1.5px -1.5px 5px black,
+        -1.5px 1.5px 5px black,
+        1.5px 1.5px 5px black,
+        0 0 15px black,
+        0 0 15px black,
+        0 0 15px black;
+}
+
+#Medo p.narracao {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#Medo p.nota{
+    margin-top: 60px;
+    font-family: 'Fluxetine';
+}
+
+#Medo div.Opressao {
+    color: white;
+    background-image: url(../fundos/destaqueMedo.webp);
+}
+
+#Medo div.Opressao p{
+    color: white;
+}
+
+#Medo div.CriasRitos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 60px;
+    margin: 70px 0;
+}
+
+#Medo div.Opressao {
+    padding: 5% 0 5%;
+}
+
+#Medo div#Marcas{
+    width: 55%;
+    height: 33vw;
+    transition: 2s;
+    background-image: url(../fundos/Simbolo_Marca_Calango.webp);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    animation: Animacao_Marcas 40s ease-in-out infinite;
+    animation-delay: 2s;
+    will-change: background-image;
+}
+
+@keyframes Animacao_Marcas {
+    0%{
+        background-image: url(../Marcas/Simbolo_Marca_Calango.webp);
+    }
+    10%,
+    15%{
+        background-image: url(../Marcas/Simbolo_Marca_Felps.webp);
+    }
+    20%,
+    25%{
+        background-image: url(../Marcas/Simbolo_Marca_Gabi_Cattuzzo.webp);
+    }
+    30%,
+    35%{
+        background-image: url(../Marcas/Simbolo_Marca_Guaxinim.webp);
+    }
+    40%,
+    45%{
+        background-image: url(../Marcas/Simbolo_Marca_Kalera.webp);
+    }
+    50%,
+    55%{
+        background-image: url(../Marcas/Simbolo_Marca_Ljoga.webp);
+    }
+    60%,
+    65%{
+        background-image: url(../Marcas/Simbolo_Marca_Luba.webp);
+    }
+    70%,
+    75%{
+        background-image: url(../Marcas/Simbolo_Marca_Miranda.webp);
+    }
+    80%,
+    85%{
+        background-image: url(../Marcas/Simbolo_Marca_Rakin.webp);
+    }
+    90%,
+    95%{
+        background-image: url(../Marcas/Simbolo_Marca_Triz_Pariz.webp);
+    }
+    100%{
+        background-image: url(../Marcas/Simbolo_Marca_Calango.webp);
+    }
+}
+
+
+#Medo ::selection {
+    background-color: black;
+    color: white;
+}
+
+#Medo ::-moz-selection {
+    background-color: black;
+    color: white;
+}
+
+#Medo ::-webkit-selection {
+    background-color: black;
+    color: white;
+}
+
+/*---------------------> Responsividade <---------------------*/
+
+@media screen and (max-width:1024px) {
+    main {
+        width: 80%;
+    }
+
+    p.subtitulo {
+        font-size: 1.6em;
+
+    }
+
+    h2 {
+        font-size: 3.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    main a {
+        font-size: 1.1em;
+    }
+
+    main a img {
+        width: 50%;
+    }
+
+    div.CriasRitos {
+        grid-column-gap: 50px;
+    }
+
+    div.CriasRitos h2 {
+        font-size: 3em;
+    }
+
+    div.Opressao {
+        width: 90%;
+    }
+
+    div.Opressao p {
+        font-size: 1em;
+    }
+
+    div.Opressao p.supera {
+        padding: 0 15%;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:761px) {
+
+    main {
+        width: 100%;
+        padding: 120px 10px !important;
+    }
+
+    img.titulo {
+        width: 100%;
+    }
+
+    h1,
+    h2,
+    p{
+        text-align: center !important;
+    }
+
+    h1{
+        border: none;
+    }
+
+    p.subtitulo {
+        font-size: 1.1em;
+    }
+
+    p.narracao {
+        margin: 30px 0;
+    }
+
+    div.CriasRitos h2,
+    h2 {
+        font-size: 1.9em;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    main a {
+        font-size: 1em;
+    }
+
+    main a img {
+        width: 98%;
+    }
+
+    div.afinidade,
+    h2.espaco,
+    div.Opressao {
+        margin-top: 50px;
+    }
+
+    div.CriasRitos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 50px;
+    }
+
+    div.Opressao {
+        width: 100%;
+        padding: 15% 0 10%;
+    }
+
+    div.Opressao p {
+        padding: 0 15%;
+        font-size: .7em;
+    }
+
+    div.Opressao p.supera {
+        padding: 0 15%;
+        font-size: 1.1em;
+    }
+
+    #Medo div#Marcas{
+        width: 98%;
+        height: 98vw;
+    }
+}

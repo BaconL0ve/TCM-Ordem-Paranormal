@@ -1,5 +1,6 @@
-/*Sessões*/
+@import url(mainSorce.css);
 
+/*---------------------> Sessões <---------------------*/
 section {
     width: 100%;
     max-width: 1920px;
@@ -15,8 +16,8 @@ div#Carousel::after,
 .borda-gradient::before {
     content: '';
     width: 100%;
-    height: 200px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 35%, #000 50%, rgba(0, 0, 0, 0.5) 65%, rgba(255, 255, 255, 0) 100%);
+    height: 225px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #000 50%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
     margin: 0;
     right: 0;
@@ -25,7 +26,7 @@ div#Carousel::after,
 }
 
 .borda-gradient::before {
-    transform: translate3d(0, -250px, 0);
+    transform: translate3d(0, -275px, 0);
 }
 
 div#Carousel::after {
@@ -40,7 +41,7 @@ section#Carousel {
 div.carousel-item {
     width: 100%;
     max-width: 1920px;
-    height: 460px;
+    height: clamp(500px, 50vh, 2000px);
     text-align: center;
     background-position: center center;
     background-size: cover;
@@ -68,9 +69,8 @@ section#Sobre_O_Universo {
     background-image: url(../fundos/fundoSobre.webp);
 }
 
-img.sublinhado {
-    width: 100%;
-    margin-bottom: 30px;
+#Sobre_O_Universo h1{
+    margin-bottom: 40px;
 }
 
 #Sobre_O_Universo div {
@@ -142,7 +142,7 @@ section#O_Outro_Lado {
 
 #O_Outro_Lado h1 {
     color: var(--cor-sangue-claro);
-    margin-bottom: 40px;
+    text-align: left;
 }
 
 #O_Outro_Lado p {
@@ -153,6 +153,7 @@ section#O_Outro_Lado {
 }
 
 #O_Outro_Lado p b {
+    color: var(--cor-sangue-claro);
     font-size: 1.3em;
     font-weight: 100;
 }
@@ -169,16 +170,19 @@ section#O_Outro_Lado {
     width: 80%;
 }
 
+#O_Outro_Lado img{
+    display: none;
+}
+
 /*---------------------> A Realidade <---------------------*/
 section#A_Realidade {
-    background-image: url(../fundos/FundoRealidade.webp);
+    background-image: url(../fundos/fundoRealidade.webp);
     background-position: center top;
     justify-content: center;
 }
 
 section#A_Realidade h1 {
     font-size: 5.5em;
-    margin: 0;
 }
 
 section#A_Realidade p {
@@ -208,12 +212,12 @@ div#papel h2 {
     text-align: center;
     margin-right: 0;
     margin-bottom: 0;
+    border-bottom: solid #000 8px;
     transform: translate3d(0, 21px, 0);
 }
 
 div#papel div {
     padding: 0 30px;
-    border-top: solid #000 8px;
     align-items: center;
     display: grid;
     grid-template-columns: 5fr 4fr;
@@ -249,6 +253,10 @@ section#O_Criador {
     padding: 150px clamp(80px, 15%, 460px);
 }
 
+#O_Criador h1{
+    text-align: left;
+}
+
 section#O_Criador img {
     height: 410px;
     width: auto;
@@ -272,10 +280,18 @@ section#O_Criador img {
     section {
         padding: 150px clamp(0px, 6%, 460px);
     }
-
-    img.sublinhado {
-        width: 80%;
-        margin-bottom: 35px;
+    
+    h1 {
+        font-size: 3.8em;
+    }
+    
+    p {
+        font-size: 1.15em;
+    }
+    
+    p.daisy-wheel {
+        font-size: 1em;
+        line-height: 30px;
     }
 
     /*Carousel*/
@@ -345,22 +361,30 @@ section#O_Criador img {
 
     /*O Criador*/
     section#O_Criador {
-        grid-template-columns: 6fr 3fr;
-        padding: 150px clamp(80px, 6%, 460px);
+        grid-template-columns: 6fr 2fr;
+        padding: 150px 4%;
     }
 
     section#O_Criador img {
-        height: 310px;
+        height: 300px;
         margin-left: 10px;
     }
 }
 
 /*---------------------> Celular <---------------------*/
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 761px) {
 
     section {
         padding: 75px 10px;
         background-position: left center;
+    }
+    
+    h1{
+        text-align: center !important;
+    }
+
+    h2{
+        border: none;
     }
 
     div#Carousel::after,
@@ -375,17 +399,6 @@ section#O_Criador img {
 
     .borda-gradient::before {
         transform: translate3d(0, -125px, 0);
-    }
-
-    h1{
-        text-align: center;
-        letter-spacing: -1.5px;
-        margin-bottom: 20px !important;
-    }
-
-    p {
-        margin: 0 10px 20px;
-        text-align: left;
     }
 
     /*Carousel*/    
@@ -424,7 +437,6 @@ section#O_Criador img {
 
     img#fear {
        order: 1;
-       transform: translate3d(0, 50px, 0);
     }
 
     img#death {
@@ -444,39 +456,39 @@ section#O_Criador img {
     }
 
     /*O Outro Lado*/
-    img.sublinhado {
-        display: none;
+    #O_Outro_Lado h1{
+        border: none;
     }
 
     p.daisy-wheel, 
     #O_Outro_Lado p,
-    #O_Outro_Lado p b { 
+    p {
+        margin: 0 10px 20px;
+        text-align: left;
         text-align: center;
         font-size: .95em;
         line-height: 26px;
         font-weight: 100;
-        margin: 0 0 20px;
+    }
+
+    #O_Outro_Lado p b{
+        font-size: .95em;
     }
 
     #OLp1,
     #OLp2,
     #OLp3 {
-        width: 100%;
+        width: 95%;
     }
 
-    #OLp3::after {
-        content: url(../ElemVis/desconjuracao.webp);
-        filter: drop-shadow(0 0 5px var(--cor-sangue));
+    #O_Outro_Lado img{
+        height: auto;
+        width: 90%;
+        display: block;
+        filter: drop-shadow(0px 0px 5px var(--cor-sangue));
     }
 
     /*A Realidade*/
-    section#A_Realidade {
-        background-position: 1350px top;
-    }
-
-    section#A_Realidade h1 {
-        font-size: 2.6em;
-    }
 
     section#A_Realidade p {
         text-align: left;
@@ -499,9 +511,9 @@ section#O_Criador img {
     }
 
     div#papel h2 {
-        font-size: 2.05em;
         letter-spacing: -2.5px;
         transform: translate3d(0, 10px, 0);
+        border-bottom: dashed 3px;
     }
 
     div#papel p {
@@ -521,6 +533,8 @@ section#O_Criador img {
     }
 
     section#O_Criador img{
+        width: 90%;
+        height: auto;
         margin: 0;
         justify-self: center;
     }

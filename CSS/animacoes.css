@@ -1,3 +1,73 @@
+/*---------------------> Transições <---------------------*/
+[data-animar] {
+    transition: transform 1.3s ease, opacity 1.3s ease, filter 1s ease;
+}
+
+[data-animar="fade"] {
+    opacity: 0;
+}
+
+[data-animar="fade-down"] {
+    transform: translate3d(0px, 50px, 0px);
+    opacity: 0;
+}
+
+[data-animar="fade-up"] {
+    transform: translate3d(0px, -50px, 0px);
+    opacity: 0;
+}
+
+[data-animar="fade-right"] {
+    transform: translate3d(-50px, 0px, 0px);
+    opacity: 0;
+}
+
+[data-animar="fade-left"] {
+    transform: translate3d(50px, 0px, 0px);
+    opacity: 0;
+}
+
+[data-animar="fade-blur"] {
+    filter: blur(10px);
+    opacity: 0;
+}
+
+[data-animar="fade-blur-down"] {
+    filter: blur(10px);
+    transform: translate3d(0px, 50px, 0px);
+    opacity: 0;
+}
+
+[data-animar="fade-blur-up"] {
+    filter: blur(10px);
+    transform: translate3d(0px, -50px, 0px);
+    opacity: 0;
+}
+
+/*Desativar Transições*/
+@media screen and (max-width: 761px) {
+
+    [data-animar="fade-blur"],
+    [data-animar="fade-blur-down"],
+    [data-animar="fade-blur-up"],
+    [data-animar="fade"],
+    [data-animar="fade-down"],
+    [data-animar="fade-up"],
+    [data-animar="fade-right"],
+    [data-animar="fade-left"] {
+        filter: none;
+        transform: translate3d(0px, 0px, 0px);
+        opacity: 1;
+    }
+
+}
+
+.animado {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    filter: blur(0);
+}
+
 /*---------------------> Header e footer <---------------------*/
 header img,
 header nav,
@@ -23,27 +93,27 @@ header i {
 section#O_Outro_Lado {
     animation-name: brilho-paranormal;
     animation-iteration-count: infinite;
-    animation-duration: 2.5s;
+    animation-duration: 1.5s;
 }
 
 @keyframes brilho-paranormal {
     0% {
-        text-shadow: 0px 0px 15px var(--cor-sangue);
+        text-shadow: 0px 0px 10px var(--cor-sangue);
     }
 
-    50% {
-        text-shadow: 0px 0px 22px var(--cor-sangue);
+    70% {
+        text-shadow: 0px 0px 25px var(--cor-sangue);
     }
 
     100% {
-        text-shadow: 0px 0px 15px var(--cor-sangue);
+        text-shadow: 0px 0px 10px var(--cor-sangue);
     }
 }
 
 .shake {
-    animation-name: shake;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
+    animation-name: shake !important;
+    animation-iteration-count: infinite !important;
+    animation-duration: 1s !important;
 }
 
 @keyframes shake {
@@ -476,128 +546,17 @@ section#O_Outro_Lado {
     }
 }
 
-@media screen and (max-width: 769px){
+/*Desativar animações Mobile*/
+@media screen and (max-width: 761px) {
     .glitch::before {
-        top: 10px;
-        left: 0px;
-        color: var(--cor-energia-telo1);
-        animation: error 5s step-end infinite, opacity 5s step-end infinite,
-            font 7s step-end infinite;
+        animation: none;
     }
-    
+
     .glitch::after {
-        top: 5px;
-        left: 0px;
-        color: var(--cor-energia-telo2);
-        animation: error 5s step-end infinite, opacity 5s step-end infinite,
-            font 7s step-end infinite;
+        animation: none;
     }
 
     .shake {
-        animation-name: shake;
-        animation-iteration-count: infinite;
-        animation-duration: 1s;
-    }
-    
-    @keyframes shake {
-        2% {
-            transform: translate(.5px, .5px) rotate(.5deg)
-        }
-    
-        6% {
-            transform: translate(0px, 0px) rotate(.5deg)
-        }
-    
-        10% {
-            transform: translate(0px, .5px) rotate(.5deg)
-        }
-    
-        14% {
-            transform: translate(0px, 0px) rotate(.5deg)
-        }
-    
-        18% {
-            transform: translate(.5px, 0px) rotate(.5deg)
-        }
-    
-        22% {
-            transform: translate(.5px, .5px) rotate(.5deg)
-        }
-    
-        26% {
-            transform: translate(0px, .5px) rotate(.5deg)
-        }
-    
-        30% {
-            transform: translate(0px, .5px) rotate(.5deg)
-        }
-    
-        34% {
-            transform: translate(.5px, 0px) rotate(.5deg)
-        }
-    
-        38% {
-            transform: translate(0px, .5px) rotate(.5deg)
-        }
-    
-        42% {
-            transform: translate(0px, .5px) rotate(.5deg)
-        }
-    
-        46% {
-            transform: translate(0px, 0px) rotate(.5deg)
-        }
-    
-        50% {
-            transform: translate(.5px, 0px) rotate(.5deg)
-        }
-    
-        54% {
-            transform: translate(.5px, 0px) rotate(.5deg)
-        }
-    
-        58% {
-            transform: translate(.5px, .5px) rotate(.5deg)
-        }
-    
-        62% {
-            transform: translate(0px, 0px) rotate(.5deg)
-        }
-    
-        66% {
-            transform: translate(0px, 0px) rotate(.5deg)
-        }
-    
-        70% {
-            transform: translate(.5px, 0px) rotate(.5deg)
-        }
-    
-        74% {
-            transform: translate(0px, 0px) rotate(.5deg)
-        }
-    
-        78% {
-            transform: translate(0px, .5px) rotate(.5deg)
-        }
-    
-        82% {
-            transform: translate(.5px, 0px) rotate(.5deg)
-        }
-    
-        86% {
-            transform: translate(.5px, 0px) rotate(.5deg)
-        }
-    
-        90% {
-            transform: translate(0px, .5px) rotate(.5deg)
-        }
-    
-        94% {
-            transform: translate(.5px, 0px) rotate(.5deg)
-        }
-    
-        98% {
-            transform: translate(.5px, 0px) rotate(.5deg)
-        }
+        animation-name: none;
     }
 }

@@ -1,0 +1,126 @@
+@import url(mainSorce.css);
+/*---------------------> Style geral <---------------------*/
+
+body {
+    background-image: url(../fundos/fundoRegras.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    width: 75%;
+    height: fit-content;
+    color: white;
+    padding: 200px 0 150px;
+}
+
+main a {
+    font-size: 1.5em;
+}
+
+::selection{
+    background-color: #00ed5f;
+    color: black;
+}
+
+/*---------------------> Texto <---------------------*/
+h1::after{
+    content: "SUBTITULO GENERICO DE REGRAS PARABENS SE VOCE TRADUZIU ISSO";
+    display: block;
+    font-family: 'Sigilos';
+    font-size: 22px;
+    text-shadow: 0 0 15px #00ed5f !important;
+}
+
+h2 {
+    font-size: 2.5em;
+    border-bottom: solid 5px white;
+    font-family: 'Keyes';
+}
+
+h3 {
+    font-size: 1.8em;
+    border-bottom: dashed 2px white;
+}
+
+h1,
+h2,
+h3,
+p,
+li {
+    text-shadow: 0 0 15px #00ed5f91 !important;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+li.largo {
+    width: 200%;
+}
+
+li b,
+p b {
+    color: #33D691;
+}
+
+.para-cima {
+    margin-top: -35%;
+}
+
+/*---------------------> Colunas <---------------------*/
+main a {
+    color: black;
+    font-family: 'Roboto Condensed';
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--cor-conhecimento);
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 4.2em;
+    }
+
+    h1::after {
+        display: none;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    p,
+    li {
+        font-size: 1em;
+    }
+
+    main a {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 761px) {
+    main {
+        width: 100%;
+        padding: 192px 10px;
+    }
+
+    .para-cima {
+        margin-top: 0;
+    }
+}

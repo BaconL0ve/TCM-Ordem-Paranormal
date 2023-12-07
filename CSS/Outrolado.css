@@ -1,0 +1,412 @@
+body {
+    background-image: url(../fundos/fundoCorrompido.webp);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+main {
+    width: 60%;
+    height: fit-content;
+    padding: 200px 0 150px;
+    text-align: center;
+}
+
+main::after,
+main::before {
+    content: " ";
+    width: 48px;
+    height: var(--altura-documento);
+    background-image: url(../ElemVis/Coluna_Sigilos.webp);
+    background-size: contain;
+    background-repeat: repeat-y;
+    position: absolute;
+    top: 80px;
+    bottom: 80px;
+    z-index: 1;
+    animation: fade 1s ease;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+main::after {
+    right: 7%;
+}
+
+main::before {
+    left: 7%;
+    background-position: 0 12%;
+}
+
+div {
+    margin-bottom: 50px;
+}
+
+/*---------------------> Botão <---------------------*/
+a.botao {
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-size: 1.2em;
+    font-weight: 500;
+    filter: drop-shadow(0 0 5px var(--cor-medo));
+    display: block;
+    transition: .3s;
+    margin-bottom: 50px;
+}
+
+a.botao:hover {
+    scale: 1.05;
+    color: var(--cor-sangue);
+    filter: drop-shadow(0 0 10px var(--cor-sangue-medo));
+}
+
+
+/*---------------------> Texto<---------------------*/
+h1,
+h2,
+h3,
+p,
+li {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    font-size: 7em;
+}
+
+h2 {
+    font-size: 3em;
+    line-height: 1.2em;
+}
+
+ul {
+    text-align: left;
+    list-style: none;
+}
+
+li {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li::before {
+    content: "I";
+    font-family: 'Sigilos';
+    font-size: 2em;
+    color: var(--cor-conhecimento);
+    margin-right: 10px;
+}
+
+/*---------------------> Simbolo <---------------------*/
+
+div.simbolo {
+    margin-bottom: 80px;
+}
+
+.simbolo h2 {
+    font-size: 3.5em;
+}
+
+.simbolo img {
+    width: clamp(410px, 70%, 1024px);
+    height: auto;
+    margin-bottom: 40px;
+    mix-blend-mode: hard-light;
+    transition: .5s;
+}
+
+.simbolo img:hover{
+    scale: 1.025;
+}
+
+.simbolo p {
+    font-size: 1.25em;
+    font-family: 'Fluxetine';
+}
+
+/*---------------------> Entidades <---------------------*/
+
+#Entidades div.duplas h2 {
+    font-size: 3.5em;
+}
+
+#Entidades div.simbolo img {
+    filter: drop-shadow(0 0 30px var(--cor-sangue-claro));
+}
+
+#Entidades #Reliquias {
+    padding: 8% 5% 7%;
+    background-image: url(../fundos/papel_Reliquias.webp);
+    background-size: 100% 100%;
+    filter: drop-shadow(0 10px 30px #000);
+}
+
+#Entidades #Reliquias h2,
+#Entidades #Reliquias p {
+    text-shadow: none;
+    color: black;
+}
+
+#Entidades section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../fundos/fundoEscolha.webp);
+    background-position: center center;
+    background-size: cover;
+    display: none;
+    flex-direction: column;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 150;
+    animation: aparecer 1.2s ease-in-out;
+}
+
+#Entidades section p{
+    font-size: 1.5em;
+    font-family: 'Fluxetine';
+    color: white;
+    text-shadow: 0 0 15px var(--cor-medo);
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#Entidades section span{
+    font-size: 1.8em;
+    font-family: 'Fluxetine';
+    color: white;
+    text-shadow: 0 0 15px var(--cor-medo);
+    margin-bottom: -80px;
+
+}
+
+@keyframes aparecer {
+    from {
+        filter: blur(10px);
+        opacity: 0;
+    }
+
+    to {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+#Entidades section div{
+    width: 100%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#Entidades section div a img{
+    width: 60%;
+    height: auto;
+    transition: .5s;
+    display: block;
+}
+
+#Entidades section div a:hover{
+    scale: 1.05;
+ 
+}
+
+a#sangue {
+    grid-area: 1 / 1 / 3 / 3;
+    filter: drop-shadow(0 0 10px var(--cor-sangue));
+}
+
+a#conhecimento {
+    grid-area: 1 / 3 / 3 / 5;
+    filter: drop-shadow(0 0 10px var(--cor-conhecimento));
+}
+
+a#morte {
+    grid-area: 3 / 1 / 5 / 3;
+    filter: drop-shadow(0 0 10px var(--cor-morte));
+    transform: translate3d(30%, 0, 0);
+}
+
+a#energia {
+    grid-area: 3 / 3 / 5 / 5;
+    filter: drop-shadow(0 0 10px var(--cor-energia));
+    transform: translate3d(-30%, 0, 0);
+}
+
+a#medo {
+    grid-area: 2 / 2 / 4 / 4;
+    filter: drop-shadow(0 0 10px var(--cor-medo));
+}
+
+
+/*---------------------> Bestiário <---------------------*/
+#Bestiario div#ficha{
+    text-align: left;
+}
+
+#Bestiario div#ficha .avisoVertical{
+    text-align: center;
+}
+
+#Bestiario div.simbolo img {
+    width: clamp(410px, 60%, 1024px);
+    height: auto;
+    filter: drop-shadow(0 0 30px var(--cor-medo));
+}
+
+#Bestiario div.sangue p, div.sangue h3{
+    text-shadow: 0 0 20px var(--cor-sangue);
+}
+
+#Bestiario div.conhecimento p, div.conhecimento h3{
+    text-shadow: 0 0 20px var(--cor-conhecimento);
+}
+
+#Bestiario div.morte p, div.morte h3 {
+    text-shadow: 0 0 20px var(--cor-morte);
+}
+
+#Bestiario div.energia p,  div.energia h3{
+    text-shadow: 0 0 20px var(--cor-energia);
+}
+
+/*---------------------> Rituais <---------------------*/
+
+#Rituais div.simbolo img {
+    width: clamp(410px, 60%, 1024px);
+    height: auto;
+    filter: drop-shadow(0 0 30px var(--cor-conhecimento));
+    mix-blend-mode: normal;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        width: 80%;
+    }
+
+    main::after,
+    main::before{
+        display: none;
+    }
+
+    /*Título*/
+    h1 {
+        font-size: 6em;
+        line-height: .8em;
+        margin-bottom: 70px;
+    }
+
+    h2 {
+        font-size: 2.8em;
+    }
+
+    /*texto*/
+    p,
+    p.introducao b {
+        font-size: 1.1em;
+    }
+
+    /*Listas*/
+    ul {
+        font-size: 1.1em;
+    }
+
+    li::before {
+
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 761px) {
+    main {
+        width: 100%;
+        padding: 150px 10px;
+    }
+
+    /*Texto*/
+    h1 {
+        border: none;
+    }
+
+    li::before {
+        font-size: 16px;
+    }
+
+    .simbolo p{
+        text-align: center;
+    }
+
+    .simbolo img {
+        width: 90% !important;
+        height: auto;
+        margin-bottom: 40px;
+        mix-blend-mode: hard-light;
+        transition: .5s;
+    }
+
+    #Entidades #Reliquias {
+        width: 100%;
+        padding: 0;
+        background-image: none;
+    }
+
+    #Entidades #Reliquias h2,
+    #Entidades #Reliquias p{
+        color: white !important;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    }
+
+    #Entidades section{
+        text-align: center;
+        justify-content: center;
+        align-content: space-around;
+        padding-top: 100px;
+        background-image: url(../fundos/fundoCorrompido.webp);
+    }
+
+    #Entidades section div{
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        text-align: center;
+        margin: 50px 0;
+    }
+    
+    #Entidades section div a img{
+        width: 70vw;
+        height: auto;
+        display: block;
+    }
+    
+    #Entidades section div a:hover{
+        scale: 1.05;
+     
+    }
+
+    #Entidades section p,
+    #Entidades section span{
+        font-size: 2em;
+        position: block !important;
+        margin-bottom: 0px;
+        justify-self: center;
+    }
+
+    #Entidades section div a{
+        transform: translate3d(0,0,0) !important;
+    }
+}

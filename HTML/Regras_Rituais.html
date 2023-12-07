@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../ElemVis/medoIcon.webp">
+    <title>Ordem Paranormal - TCM</title>
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../CSS/mainSorce.css">
+    <link rel="stylesheet" href="../CSS/animacoes.css">
+    <link rel="stylesheet" href="../CSS/Regras.css">
+</head>
+
+<body class="Regras">
+    <header>
+        <a href="index.html">
+            <img src="../ElemVis/opLogo.webp" alt="ordem paranomral logo">
+        </a>
+
+        <i id="barrinha" class="fa fa-navicon" onclick="estado()"></i>
+
+        <nav class="menuitem">
+            <a href="index.html">Sobre</a>
+            <a href="Entidadades.html">Entidades</a>
+            <a href="Rituais.html">Rituais</a>
+            <a href="Bestiario.html">Bestiário</a>
+            <a href="https://ordemparanormal.fandom.com/wiki/Ordem_Paranormal_Wiki" target="_blank">Wiki</a>
+            <a href="https://www.lolja.com.br/ordem-cellbit" target="_blank">Loja</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>REGRAS DE CONJURAÇÃO</h1>
+
+        <section class="tresquintos">
+            <div>
+                <div id="execulcao">
+                    <h2>EXECULÇÃO</h2>
+                    <p>
+                        A ação necessária para lançar o ritual. Para rituais com execução de ação livre, apenas um pode
+                        ser lançado por rodada. No caso de rituais com execução maior do que uma ação completa, você
+                        fica desprevenido enquanto estiver conjurando o ritual.
+                    </p>
+                </div>
+
+                <div id="formas-avancadas">
+                    <h2>FORMAS AVANÇADAS</h2>
+                    <p>
+                        Alguns rituais possuem formas avançadas, conhecidas como discente e verdadeira. Quando existem,
+                        essas formas aparecem após o texto do ritual. Quando conjura um ritual que possui uma forma
+                        avançada, você pode usar uma delas. Isso aumenta o custo do ritual e muda seu efeito; tanto o
+                        aumento no custo quanto a mudança no efeito são descritos na linha da forma (aspectos do ritual
+                        não mencionados continuam iguais). Você pode usar apenas um aprimoramento por conjuração. Note
+                        que, como com qualquer habilidade, o máximo de PE que você pode gastar ao conjurar um ritual é o
+                        seu limite de PE.
+                    </p>
+                </div>
+            </div>
+            <div id="resistencia">
+                <h2>RESISTENCIA</h2>
+                <p>
+                    A maioria dos rituais prejudiciais permite que seus alvos façam um teste de resistência para evitar
+                    o efeito ou parte dele. O tipo de teste (Fortitude, Reflexos ou Vontade) e a maneira como ele altera
+                    o efeito são descritos no texto. Rituais que não permitem testes de resistência não incluem este
+                    trecho.
+                </p>
+                <h3>DIFICULDADE</h3>
+                <p>
+                    A dificuldade (DT) do teste de resistência contra um ritual é calculada usando como o atributo
+                    Presença somado ao seu limite de PE e por fim somado a 10. Assim, a DT para resistir aos rituais de
+                    um ocultista com Presença 3 e NEX 5% é 14 (10 + 1 + 3). Cada ritual indica o que ocorre quando um
+                    alvo faz um teste de resistência, usando os seguintes termos:
+                </p>
+                <div class="duplas">
+                    <ul>
+                        <li>
+                            <b>Anula.</b> O ritual não tem efeito sobre um alvo que passe em seu teste de resistência.
+
+                        </li>
+                        <li>
+                            <b>Parcial.</b> O efeito do ritual é menor em um alvo que passe no teste.
+                        </li>
+                        <li>
+                            <b>Reduz à Metade.</b> O efeito do ritual é reduzido à metade em um alvo que passe no teste
+                            (aplicado antes de resistência a dano).
+                        </li>
+                    </ul>
+                    <p>
+                        <b>Desacredita. </b>Se um ser interagir com o ritual (examinando de perto ou tocando-o; apenas
+                        observa-
+                        lo de longe não é suficiente)tem direito a um teste para perceber que ele não é real. O ritual
+                        continua funcionando mesmo que alguém perceba que ele não é real; esse ser pode avisar seus
+                        aliados como uma ação livre, permitindo que eles façam testes para desacreditar.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="duplas">
+            <div>
+                <div id="alcance">
+                    <h2>ALCANCE</h2>
+                    <p>
+                        A distância máxima a partir do conjurador que o ritual alcança. Apesar disso, caso alguma parte
+                        da área ou efeito do ritual esteja além do alcance, a área é afetada normalmente.
+                    </p>
+                    <ul class="duplas">
+                        <li>
+                            <b>Pessoal.</b> O ritual afeta somente o conjurador
+                            e/ou objetos que ele esteja carregando.
+                            Também pode ser um ritual de
+                            área que se inicia a partir do personagem.
+                        </li>
+                        <li>
+                            <b>Toque.</b> O conjurador precisa tocar o
+                            ser ou objeto para afetá-lo, mas não
+                            precisa gastar uma ação ou fazer testes
+                            para isso (tocar o alvo faz parte da ação
+                            do ritual).
+                        </li>
+                        <li>
+                            <b>Curto.</b> O ritual alcança uma distância
+                            curta (9m ou 6 quadrados em um mapa).
+                        </li>
+                        <li>
+                            <b>Médio.</b> O ritual alcança uma distância média (18m
+                            ou 12 quadrados).
+                        </li>
+                        <li>
+                            <b>Extremo.</b> O ritual alcança uma distância extrema
+                            (90m ou 60 quadrados).
+                        </li>
+                        <li>
+                            <b>Longo.</b> O ritual alcança uma distância longa (36m
+                            ou 24 quadrados).
+                        </li>
+                        <li class="largo">
+                            <b>Ilimitado.</b> O ritual alcança qualquer lugar no
+                            mundo. Rituais com este alcance normalmente
+                            exigem que você conheça e/ou já tenha estado no
+                            ponto de origem do ritual.
+                        </li>
+                    </ul>
+                </div>
+                <div id="efeito">
+                    <h2>EFEITO</h2>
+                    <p>
+                        Alguns rituais atingem um ou mais alvos. Outros afetam uma área (e todos dentro dela). E outros
+                        criam ou invocam coisas, em vez de afetar aqueles já existentes.
+                    </p>
+                    <ul>
+                        <li>
+                            <b>Alvo.</b> O ritual tem um ou mais alvos, que podem ser seres (pessoas, animais e/ou
+                            criaturas)
+                            ou objetos. Você lança o ritual diretamente contra os alvos. Você deve ser capaz de perceber
+                            o alvo. Um ritual lançado sobre um tipo errado de alvo falha automaticamente.
+                        </li>
+                        <li>
+                            <b>Linha de Efeito.</b> É um caminho direto e sem obstruções até onde o ritual pode ter
+                            efeito. Um
+                            personagem deve ter uma linha de efeito para qualquer alvo ou área que queira afetar ou para
+                            qualquer espaço onde queira criar um efeito. Qualquer barreira sólida, visível ou não, anula
+                            a linha de efeito. Redirecionando Efeitos. Alguns rituais permitem redirecionar seu efeito
+                            para novos alvos ou áreas após serem lançadas. Quando isso for possível, redirecionar um
+                            ritual é uma ação padrão.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="duracao">
+                <h2>DURAÇÃO</h2>
+                <p>
+                    A duração indica por quanto tempo o ritual mantém seu efeito. Quando ele termina, a manifestação do
+                    Outro Lado se dissipa, e o ritual acaba.
+                </p>
+                <ul class="duplas">
+                    <li>
+                        <b>Instantânea.</b> A manifestação de um ritual instantâneo aparece e se dissipa no momento em que ele
+                        é lançado, mas suas consequências podem durar mais tempo.
+                    <li>
+                        <b>Cena.</b> O ritual dura uma cena inteira, esvaindo-se quando esse momento da história acaba. Uma
+                        cena não tem duração fixa. Pode ser desde algumas rodadas, para um combate, até várias horas,
+                        para uma viagem sem incidentes.
+                    </li>
+                    <li>
+                        <b>Sustentada.</b> O ritual precisa de um fluxo constante de esforço. O conjurador deve gastar 1 PE
+                        como uma ação livre no início de seus turnos para manter o efeito ativo. Se não o fizer, o
+                        ritual termina. Você só pode manter um ritual sustentado por vez. Duração Definida. A duração
+                        pode ser medida em rodadas, minutos, horas, dias ou outra unidade.
+                    </li>
+                    </li>
+                    <li>
+                        <b>Alvos, Efeitos e Áreas.</b> Caso o ritual afete diretamente seres, seus efeitos acompanham o alvo
+                        pela duração do ritual. Se o ritual cria um efeito, ele permanece pela duração do ritual. O
+                        efeito poderá se mover ou permanecer imóvel. Esses efeitos podem ser destruídos antes que sua
+                        duração termine. Se o ritual afeta uma área, seus efeitos permanecem naquela área pela duração
+                        do ritual. Seres se tornam alvos do ritual quando entram em sua área de efeito, deixando de
+                        sê-lo quando saem.
+                    </li>
+                    <li class="para-cima">
+                        <b>Descarregar.</b> Alguns rituais duram até que sejam ativados ou descarregados. O ritual permanece
+                        “dormente” até que determinado evento aconteça, quando é então ativado, ou até que sua duração
+                        transcorra, quando então se dissipa sem qualquer efeito.
+                    </li>
+                    <li>
+                        <b>Permanente.</b> O ritual fica ativo indefinidamente. Um ritual permanente ainda pode ser dissipado.
+                    </li>
+                    <li class="largo">
+                        <b>Encerrando seus Rituais.</b> O conjurador pode dissipar seus rituais a qualquer momento como uma
+                        ação livre, desde que esteja dentro do alcance. A morte do conjurador não afeta seus rituais
+                        (exceto os sustentados), que continuam ativos até o término de sua duração.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h3>ÁREA</h3>
+            <div class="duplas">
+                <div id="area-parte1">
+                    <p>O ritual afeta uma área. Você decide um ponto
+                        que possa perceber a partir do qual o ritual tem início,
+                        mas não controla quais seres ou objetos serão afetados
+                        — qualquer coisa dentro da área estará sujeita aos
+                        efeitos (incluindo você). De acordo com o mestre,
+                        você pode lançar um ritual numa área que não possa
+                        perceber com um teste de Ocultismo (DT 20 + custo
+                        em PE do ritual). Em geral, as áreas se enquadram em
+                        uma das categorias a seguir.
+                    </p>
+                    <p>
+                        Todas as áreas avançam até seu limite ou até serem
+                        interrompidas por uma barreira capaz de bloqueá-las.
+                        Efeito. Alguns rituais criam ou convocam coisas.
+                        O conjurador decide onde essas coisas vão aparecer
+                        e deve ter uma linha de efeito até esse local (veja a
+                        seguir). Depois de criado ou invocado, o efeito pode
+                        se mover para fora da linha de efeito.
+                    </p>
+                </div>
+                <div id="area-parte2">
+                    <ul>
+                        <li>
+                            <b>Cone.</b> Um cone surge adjacente a você e avança
+                            na direção escolhida, ficando mais largo com a
+                            distância. Sua largura final será igual ao seu alcance.
+                        </li>
+                        <li>
+                            <b>Cubo.</b>
+                            Um cubo surge no quadrado ou quadrados
+                            escolhidos, ocupando o volume indicado.
+                        </li>
+                        <li>
+                            <b>Esfera.</b> Uma esfera surge na interseção de quatro
+                            quadrados, estendendo-se em todas as direções
+                            até o limite de seu raio.
+                        </li>
+                        <li>
+                            <b>Linha.</b> Uma linha surge adjacente a você e avança
+                            reta até o fim do alcance. A menos que indicado o
+                            contrário, uma linha tem 1,5m de largura.
+                        </li>
+                        <li>
+                            <b>Outros.</b> Alguns rituais podem ter áreas específicas,
+                            explicadas em sua descrição.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <a href="Rituais.html">Voltar</a>
+    </main>
+
+    <footer>
+        <div id="direitos-autorais">
+            <img src="../ElemVis/opLogo.webp" alt="logo ordem paranromal">
+            <span> Todos os Direitos Reservados ® 2023 Ordem Paranormal</span>
+        </div>
+
+        <div id="icones-redes-sociais">
+
+            <a class="fa fa-youtube-play" href="https://www.youtube.com/@OrdemParanormal" target="_blank"></a>
+
+            <a class="fa fa-facebook-f" href="https://www.facebook.com/OrdemParanormal/" target="_blank"></a>
+
+            <a class="fa fa-twitter" href="https://twitter.com/ordemparanormal" target="_blank"> </a>
+
+            <a class="fa fa-instagram" href="https://www.instagram.com/ordemparanormal/" target="_blank"></a>
+
+            <a class="fa fa-spotify"
+                href="https://open.spotify.com/intl-pt/artist/2MUYC8Vj0uAZWtI37Bt6w7?si=OMv9-bnTQHm3GRtmu7xoUQ&dl_branch=1&nd=1"
+                target="_blank"></a>
+
+            <a class="fa fa-apple" href="https://music.apple.com/br/artist/júlio-victor/1569993490" target="_blank"></a>
+        </div>
+    </footer>
+
+    <script src="../ordemparanormal.js"></script>
+</body>

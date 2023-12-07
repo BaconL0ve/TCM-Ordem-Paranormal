@@ -1,0 +1,215 @@
+@import url(mainSorce.css);
+
+/*---------------------> Style Geral <---------------------*/
+main {
+    width: 70%;
+}
+
+/*---------------------> Textos <---------------------*/
+
+h1 {
+    font-weight: 100;
+    font-size: 2em;
+    transform: translate3d(0, 30px, 0);
+    margin: 0;
+}
+
+h2 {
+    text-align: left;
+    border-bottom: solid 5px white;
+    margin: 70px 0 50px;
+}
+
+h3 {
+    border: none;
+}
+
+img.tituloRitual {
+    width: 65%;
+    height: auto;
+}
+
+/*---------------------> Lista de rituais <---------------------*/
+div.lista-rituais-circulo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.ritual {
+    width: 30%;
+    padding: 20px;
+    border: solid 1px white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: .5s;
+}
+
+div.ritual:hover {
+    scale: 1.02;
+}
+
+div.ritual h3 {
+    font-size: 2em;
+    font-family: 'Gabriele Bad';
+    font-weight: 100;
+}
+
+/*---------------------> Descrição do Ritual<---------------------*/
+section.descricao-Info {
+    height: calc(100vh - 86px);
+    width: 100vw;
+    position: fixed;
+    display: none;
+    margin-top: 86px;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    animation: aparecer .7s ease;
+}
+
+@keyframes aparecer {
+    from {
+        filter: blur(10px);
+        opacity: 0;
+    }
+
+    to {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+div.carta {
+    width: 45%;
+    height: 75%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 20px;
+    grid-template-rows: 20px 1fr repeat(2, 3fr);
+    padding: 20px 20px 40px 40px;
+    text-align: left;
+
+    border: solid 1px white;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.carta h3,
+.carta ul,
+.carta div {
+    width: 100%;
+}
+
+.carta h3 {
+    font-size: 2em;
+    margin-bottom: 50px;
+    font-family: 'Westsac';
+    text-align: center;
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.carta i {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.carta ul {
+    list-style: none;
+    margin-right: 20px;
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.carta div.simbolo {
+    text-align: center;
+    margin-bottom: 20px;
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.carta div {
+    grid-area: 3 / 2 / 5 / 3;
+}
+
+div.carta p,
+div.carta li,
+div.carta h4 {
+    font-size: .9em;
+    margin-bottom: 15px;
+    font-family: 'WarnockPro';
+}
+
+div.carta li b,
+h4 {
+    color: white;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 761px) {
+
+    main {
+        width: 100%;
+        padding: 75px 10px !important;
+    }
+
+    div.ritual {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 25px !important;
+        border: none;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    img.tituloRitual {
+        width: 98%;
+    }
+
+    div.ritual h3 {
+        font-size: 1.8em;
+    }
+
+    /*---------------------> Descrição do Ritual<---------------------*/
+    section.descricao-Info {
+        height: calc(100vh - 70px);
+        width: 100vw;
+        margin-top: 70px;
+    }
+
+    div.carta {
+        width: 98%;
+        height: 98%;
+        margin: 50px 0;
+        grid-template-columns: 1fr 20px;
+        grid-template-rows: 20px 1fr repeat(3, 2fr);
+    }
+
+    .carta h3 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .carta i {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .carta ul {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .carta div.simbolo {
+        text-align: center;
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .carta div {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../ElemVis/medoIcon.webp">
+    <title>Ordem Paranormal - TCM</title>
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../CSS/mainSorce.css">
+    <link rel="stylesheet" href="../CSS/animacoes.css">
+    <link rel="stylesheet" href="../CSS/Outrolado.css">
+</head>
+
+<body Id="Bestiario" class="Paranormal">
+    <header>
+        <a href="index.html">
+            <img src="../ElemVis/opLogo.webp" alt="ordem paranomral logo">
+        </a>
+
+        <i id="barrinha" class="fa fa-navicon" onclick="estado()"></i>
+
+        <nav class="menuitem">
+            <a href="index.html">Sobre</a>
+            <a href="Entidadades.html">Entidades</a>
+            <a href="Rituais.html">Rituais</a>
+            <a href="Bestiario.html">Bestiário</a>
+            <a href="https://ordemparanormal.fandom.com/wiki/Ordem_Paranormal_Wiki" target="_blank">Wiki</a>
+            <a href="https://www.lolja.com.br/ordem-cellbit" target="_blank">Loja</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 data-animar="fade-down" class="sublinhado"> BESTIÁRIO</h1>
+
+        <p data-animar="fade" class="introducao">
+            Ao ultrapassar a Membrana, as entidades precisam se submeter às leis que definem a Realidade, sendo moldadas
+            aos conceitos e ideias que enfraqueceram a Membrana em primeiro lugar. Porém, nesse processo, as entidades
+            também lutam de volta, distorcendo as regras às quais estão sendo impostas. Por causa disso, as
+            manifestações podem tomar várias formas: se invocadas propositalmente através de um ritual, as entidades
+            alteram apenas pontos específicos da Realidade comunicados por um conjurador através de um símbolo.
+        </p>
+        <p data-animar="fade" class="margin60">
+            Ambientes com Membrana enfraquecida têm uma origem de Medo que mantém o paranormal ativo. ma origem é como
+            uma memória do Outro Lado, um registro do Medo que foi gerado e que continua servindo como uma ponte para
+            que as entidades tomem forma e consigam se manifestar. Quando surgem espontaneamente, entidades absorvem uma
+            concepção fictícia que seja uma fonte exorbitante de Medo, algo que é temido ao mesmo tempo que não existe,
+            moldando-se como criaturas paranormais. Criaturas não precisam ser famosas; até uma única pessoa sentindo
+            Medo suficiente pode gerar uma. Investigar a origem é crucial, pois criaturas são influenciadas por ideias
+            preexistentes, permitindo encontrar a melhor maneira de derrotá-las.
+        </p>
+
+        <a class="botao" href="#selecaoElementos">Ir para lista de Criaturas</a>
+
+        <div class="avisoSimples" data-animar="fade-down">
+            <p class="shake">
+                É <b>IMPOSSIVEL</b> COMANDAR AS CRIAS DO OUTRO LADO
+            </p>
+        </div>
+
+        <div data-animar="fade-down">
+            <h2>FICHAS DE CRIATURAS</h2>
+            <p>
+                Todas as criaturas paranormais ganham uma aparência e se comportam de acordo com a fonte de Medo que as
+                originou, adquirindo habilidades e capacidades únicas. As fichas de criaturas contêm informações, como a
+                origem que as concebeu, sua aparência, habilidades e capacidades físicas e paranormais.
+            </p>
+        </div>
+
+        <div id="ficha" class="duplas">
+            <div data-animar="fade-left">
+                <h3>NOME E VD</h3>
+                <p>
+                    O nome da ameaça. Ao lado do nome estará o valor de desafio(VD) dela. O VD é utilizado para
+                    equilibrar combates, some o valor de todas as criaturas e compare com a soma do NEX de todos os
+                    personagens do grupo. Se for equivalente, o combate será equilibrado. Se for próximo da metade do
+                    NEX do grupo, o combate será fácil. Se o VD for próximo de uma vez e meia o NEX do grupo, o combate
+                    será difícil.
+                </p>
+
+                <h3>DEFESA</h3>
+                <p>
+                    A Defesa e os valores de Fortitude, Reflexos e Vontade da ameaça.
+                </p>
+
+                <h3>SENTIDOS</h3>
+                <p>
+                    Os bônus de Percepção e Iniciativa da criatura, e quaisquer habilidades relacionadas a sentidos.
+                </p>
+
+                <h3>DESLOCAMENTO</h3>
+                <p>
+                    A quantidade de metros que a criatura consegue percorrer com uma ação de movimento (e, entre
+                    parênteses,
+                    a quantidade de &#x2751; quadrados de 1,5m).
+                </p>
+
+                <h3>ATRIBUTOS</h3>
+                <p>
+                    Os valores de Agilidade, Força, Intelecto, Presença e Vigor da criaturas.
+                </p>
+
+                <h3>PERÍCIAS</h3>
+                <p>
+                    Os valores das demais perícias da criatura (além de Iniciativa, Percepção, Fortitude, Reflexos e
+                    Vontade, que já apareceram). Caso a ameaça não possua outras perícias, este campo não aparecerá.
+                </p>
+            </div>
+            <div data-animar="fade-right">
+                <h3>PONTOS DE VIDA</h3>
+                <p>Os pontos de vida da criatura, além de quaisquer resistências a dano e habilidades defensivas.</p>
+
+                <h3>HABILIDADES</h3>
+                <p>Quaisquer habilidades passivas — ou seja, que estão sempre ativas — que a ameaça possui.</p>
+
+                <h3>AÇÕES</h3>
+                <p>Todos as ações e habilidades ativas que a ameaça pode usar. Antes do nome, haverá a ação necessária
+                    para
+                    usar o ataque ou habilidade. Nos ataques, um multiplicador após o descritor do tipo de ataque (por
+                    exemplo, Corpo a corpo x2) indica que a ameaça faz aquele quantidade de ataques por ação (seja por
+                    possuir várias armas do mesmo tipo, seja por fazer vários ataques com uma única arma). Exceto se
+                    indicado o contrário, ataques de ameaças têm crítico 20/x2.</p>
+
+                <div class="avisoVertical">
+                    <h4>BLOQUEIOS, ESQUIVAS E CONTRA-ATAQUES </h4>
+                    <p>
+                        Ao contrário de personagens jogadores, ameaças não possuem a opção de executar bloqueios,
+                        esquivas e contra-ataques. Em vez disso, suas estatísticas defensivas são calculadas para
+                        representar a totalidade de suas habilidades de proteção. Isso é uma simplificação para tornar o
+                        jogo mais ágil e permitir que o mestre possa controlar as ameaças de forma fácil.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <a class="botao" href="habilidades.html">Ver habilidades de criaturas</a>
+
+        <div class="simbolo">
+            <h2 data-animar="fade-down">AFINAR A MEMBRANA</h2>
+
+            <img onclick="sobrepor()" src="../ElemVis/simbolo_Cineraria.webp"
+                alt="o simbolo das que representa o outro lado" data-animar="fade-blur">
+
+            <p data-animar="fade-up">CLIQUE NO SIMBOLO PARA VER LISTA DE CRIATURAS</p>
+        </div>
+
+        <div>
+            <h2>PERCEPÇÃO PARANORMAL</h2>
+
+            <p>
+                As criaturas paranormais possuem diferentes tipos de percepção, mas em termos de regras usaremos termos
+                comuns, como faro, percepção às cegas e visão no escuro. A seguir, colocamos como cada elemento
+                manifesta essas percepções, de modo que você possa incorporar essas características nas descrições das
+                criaturas e de suas ações.
+            </p>
+        </div>
+
+        <div class="duplas">
+            <div>
+                <div class="sangue">
+                    <h3>SANGUE</h3>
+                    <p>Criaturas de Sangue não possuem visão, mas são extremamente sensíveis à dor e possuem uma apurada
+                        percepção tátil. Elas literalmente enxergam através da dor. Isso faz com que sintam pequenas
+                        variações em correntes de ar, se orientando através de mudanças sutis.
+                    </p>
+                </div>
+                <div class="conhecimento">
+                    <h3>CONHECIMENTO</h3>
+                    <p>
+                        Aqueles moldados pelo Conhecimento não percebem a Realidade da mesma forma que nós. Essas
+                        criaturas conseguem ver através das correntes que constituem a Realidade, usando o Conhecimento
+                        como ferramenta para interpretar essas conexões. Isso faz com que consigam ver coisas invisíveis
+                        ao olho nu.
+
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class="morte">
+                    <h3>MORTE</h3>
+                    <p> O Lodo atravessa as coisas e o tempo, fazendo com que esteja presente em tudo ao mesmo tempo.
+                        Criaturas de Morte conseguem perceber através do Lodo, o que faz com que percebam as coisas
+                        através da passagem do tempo. Coisas imunes à passagem do tempo fogem da percepção das criaturas
+                        de Morte.
+                    </p>
+                </div>
+                <div class="energia">
+                    <h3>ENERGIA</h3>
+                    <p> Criaturas de Energia são as únicas que precisam de luz para perceber seus arredores. A maioria
+                        dessas criaturas possui brilho próprio, o que faz com que consigam perceber seus arredores mesmo
+                        no escuro. Ainda assim, caso sua luz própria seja apagada eles estarão com um grande problema,
+                        pois não vão conseguir perceber nada à sua volta.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="direitos-autorais">
+            <img src="../ElemVis/opLogo.webp" alt="logo ordem paranromal">
+            <span> Todos os Direitos Reservados ® 2023 Ordem Paranormal</span>
+        </div>
+
+        <div id="icones-redes-sociais">
+
+            <a class="fa fa-youtube-play" href="https://www.youtube.com/@OrdemParanormal" target="_blank"></a>
+
+            <a class="fa fa-facebook-f" href="https://www.facebook.com/OrdemParanormal/" target="_blank"></a>
+
+            <a class="fa fa-twitter" href="https://twitter.com/ordemparanormal" target="_blank"> </a>
+
+            <a class="fa fa-instagram" href="https://www.instagram.com/ordemparanormal/" target="_blank"></a>
+
+            <a class="fa fa-spotify"
+                href="https://open.spotify.com/intl-pt/artist/2MUYC8Vj0uAZWtI37Bt6w7?si=OMv9-bnTQHm3GRtmu7xoUQ&dl_branch=1&nd=1"
+                target="_blank"></a>
+
+            <a class="fa fa-apple" href="https://music.apple.com/br/artist/júlio-victor/1569993490" target="_blank"></a>
+        </div>
+    </footer>
+
+    <script src="../ordemparanormal.js"></script>
+</body>
